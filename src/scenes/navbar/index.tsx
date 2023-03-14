@@ -17,12 +17,12 @@ const Navbar = ({ selectedPage, isTopofPage, setSelectedPage }: Props) => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
   const navbarBackground = isTopofPage ? "" : "bg-primary-100 drop-shadow";
 
-
   return (
     <nav>
       <div
-        className={`${navbarBackground}fixed top-0 z-30 flex w-full items-center justify-between py-6`}
+        className={`${navbarBackground} fixed top-0 z-30 flex w-full items-center justify-between py-6`}
       >
+        {" "}
         <div className="mx-auto flex w-5/6 items-center justify-between">
           <div className="flex w-full items-center justify-between gap-16 ">
             {/* Left Side */}
