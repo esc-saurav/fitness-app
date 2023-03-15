@@ -76,7 +76,7 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {isAboveMediumScreens && (
-        <div className="h-[100px] w-full bg-primary-100 py-10">
+        <div className="h-[110px] w-full bg-primary-100 py-10">
           <Sponser />
         </div>
       )}
