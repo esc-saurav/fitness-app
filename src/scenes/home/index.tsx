@@ -2,12 +2,11 @@ import { SelectedPage } from "../../shared/Types";
 import Button from "../../shared/Button";
 import HomePageText from "../../assets/HomePageText.png";
 import HomePageGraphics from "../../assets/HomePageGraphic.png";
-import SponserRedBull from "../../assets/SponsorRedBull.png";
-import SponserForbes from "../../assets/SponsorForbes.png";
-import SponserFortune from "../../assets/SponsorFortune.png";
+
 import useMediaQuery from "../../hooks/useMediaQuery";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
+import Sponser from "./Sponser";
 
 type Props = {
   setSelectedPage: (selectedPage: SelectedPage) => void;
@@ -77,14 +76,8 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
-          <div className="mx-auto w-5/6 ">
-            <div className="flex  w-3/5 items-center justify-between gap-8">
-              <img src={SponserRedBull} alt="SponserRedBull" />
-              <img src={SponserForbes} alt="SponserForbes" />
-              <img src={SponserFortune} alt="SponserFortune" />
-            </div>
-          </div>
+        <div className="h-[100px] w-full bg-primary-100 py-10">
+          <Sponser />
         </div>
       )}
     </section>
