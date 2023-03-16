@@ -2,7 +2,6 @@ import { SelectedPage } from "../../shared/Types";
 import Button from "../../shared/Button";
 import HomePageText from "../../assets/HomePageText.png";
 import HomePageGraphics from "../../assets/HomePageGraphic.png";
-
 import useMediaQuery from "../../hooks/useMediaQuery";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
@@ -76,7 +75,7 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {isAboveMediumScreens && (
-        <div className="h-[100px] w-full bg-primary-100 py-10">
+        <div className="h-[110px] w-full bg-primary-100 py-10">
           <Sponser />
         </div>
       )}
