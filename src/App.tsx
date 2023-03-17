@@ -5,6 +5,7 @@ import Home from "./scenes/home";
 import Benefits from "./scenes/benefits";
 import OurClasses from "./scenes/ourClasses";
 import ContactUS from "./scenes/contactUs";
+import Footer from "./scenes/footer";
 function App() {
   const [selectedPage, setSelectedPage] = useState(SelectedPage.Home);
   const [isTopofPage, setIsTopofPage] = useState<Boolean>(true);
@@ -33,7 +34,8 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
-      <ContactUS setSelectedPage={setSelectedPage}/>
+      <ContactUS setSelectedPage={setSelectedPage} />
+      <Footer setSelectedPage={setSelectedPage} />
     </div>
   );
 }

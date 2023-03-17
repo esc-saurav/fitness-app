@@ -42,9 +42,9 @@ const ContactUS = ({ setSelectedPage }: Props) => {
             <div className="relative">
               <img src={ContactUsPageGraphic} alt="ContactUsPageGraphic" />
             </div>
-            <div className="absolute right-5">
+            {/* <div className="absolute right-5">
               <img src={EvolveText} alt="EvolveText" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
